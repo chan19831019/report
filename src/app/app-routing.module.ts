@@ -9,6 +9,7 @@ import { ReportNineComponent } from './report-nine/report-nine.component';
 import { ReportTenComponent } from './report-ten/report-ten.component';
 import { ReportElevenComponent } from './report-eleven/report-eleven.component';
 import { ReportTwelveComponent } from './report-twelve/report-twelve.component';
+import { ReportThirteenComponent } from './report-thirteen/report-thirteen.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,9 @@ const routes: Routes = [
   },
   {
     path: 'reportTwelve', component: ReportTwelveComponent
+  },
+  {
+    path: 'reportThirteen', component: ReportThirteenComponent
   }
 ];
 
