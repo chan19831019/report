@@ -15,7 +15,8 @@ import { Report13Component } from './report13/report13.component';
 import { Report14Component } from './report14/report14.component';
 import { Report15Component } from './report15/report15.component';
 import { Report16Component } from './report16/report16.component';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { SharedMaterialModule } from './shared-material/shared-material.module';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,9 @@ import { Report16Component } from './report16/report16.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    SharedMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

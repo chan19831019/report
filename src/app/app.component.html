@@ -4,49 +4,13 @@
     Welcome to {{ title }}!
   </h1>
 </div>
-<div>
-  <ul>
-    <li>
-      <h2><a routerLink="report4">報表4</a></h2>
-    </li>
-    <li>
-      <h2><a routerLink="report5">報表5</a></h2>
-    </li>
-    <li>
-      <h2><a routerLink="report6">報表6</a></h2>
-    </li>
-    <li>
-      <h2><a routerLink="report7">報表7</a></h2>
-    </li>
-    <li>
-      <h2><a routerLink="report8">報表8</a></h2>
-    </li>
-    <li>
-      <h2><a routerLink="report9">報表9</a></h2>
-    </li>
-    <li>
-      <h2><a routerLink="report10">報表10</a></h2>
-    </li>
-    <li>
-      <h2><a routerLink="report11">報表11</a></h2>
-    </li>
-    <li>
-      <h2><a routerLink="report12">報表12</a></h2>
-    </li>
-    <li>
-      <h2><a routerLink="report13">報表13</a></h2>
-    </li>
-    <li>
-      <h2><a routerLink="report14">報表14</a></h2>
-    </li>
-    <li>
-      <h2><a routerLink="report15">報表15</a></h2>
-    </li>
-    <li>
-      <h2><a routerLink="report15">報表16</a></h2>
-    </li>
-  </ul>
-</div>
+<mat-tab-group mat-stretch-tabs>
+  <mat-tab *ngFor="let link of navLinks">
+    <ng-template mat-tab-label>
+      <a routerLinkActive #rla="routerLinkActive" [routerLink]="link.path">{{link.label}}</a>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>
 <div style="size: A4;margin: 0 auto;width: 820px;margin-bottom: 50px;">
   <router-outlet></router-outlet>
 </div>

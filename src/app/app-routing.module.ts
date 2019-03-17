@@ -15,15 +15,9 @@ import { Report15Component } from './report15/report15.component';
 import { Report16Component } from './report16/report16.component';
 
 const routes: Routes = [
-  {
-    path: 'report4', component: Report4Component
-  },
-  {
-    path: 'report5', component: Report5Component
-  },
-  {
-    path: 'report6', component: Report6Component
-  },
+  { path: 'report4', component: Report4Component },
+  { path: 'report5', component: Report5Component },
+  { path: 'report6', component: Report6Component },
   {
     path: 'report7', component: Report7Component
   },
