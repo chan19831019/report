@@ -10,6 +10,7 @@ import { ReportTenComponent } from './report-ten/report-ten.component';
 import { ReportElevenComponent } from './report-eleven/report-eleven.component';
 import { ReportTwelveComponent } from './report-twelve/report-twelve.component';
 import { ReportThirteenComponent } from './report-thirteen/report-thirteen.component';
+import { Report14Component } from './report14/report14.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,9 @@ const routes: Routes = [
   },
   {
     path: 'reportThirteen', component: ReportThirteenComponent
+  },
+  {
+    path: 'report14', component: Report14Component
   }
 ];
 

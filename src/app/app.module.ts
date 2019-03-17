@@ -13,6 +13,7 @@ import { ReportTenComponent } from './report-ten/report-ten.component';
 import { ReportElevenComponent } from './report-eleven/report-eleven.component';
 import { ReportTwelveComponent } from './report-twelve/report-twelve.component';
 import { ReportThirteenComponent } from './report-thirteen/report-thirteen.component';
+import { Report14Component } from './report14/report14.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ReportThirteenComponent } from './report-thirteen/report-thirteen.compo
     ReportTenComponent,
     ReportElevenComponent,
     ReportTwelveComponent,
-    ReportThirteenComponent
+    ReportThirteenComponent,
+    Report14Component
   ],
   imports: [
     BrowserModule,
